@@ -1,0 +1,97 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "centralindia"
+        },
+        "storageAccountName": {
+            "value": "az305srkstorage"
+        },
+        "accountType": {
+            "value": "Standard_LRS"
+        },
+        "kind": {
+            "value": "StorageV2"
+        },
+        "accessTier": {
+            "value": "Hot"
+        },
+        "minimumTlsVersion": {
+            "value": "TLS1_2"
+        },
+        "supportsHttpsTrafficOnly": {
+            "value": true
+        },
+        "publicNetworkAccess": {
+            "value": "Enabled"
+        },
+        "allowBlobPublicAccess": {
+            "value": true
+        },
+        "allowSharedKeyAccess": {
+            "value": true
+        },
+        "allowCrossTenantReplication": {
+            "value": true
+        },
+        "defaultOAuth": {
+            "value": false
+        },
+        "networkAclsBypass": {
+            "value": "AzureServices"
+        },
+        "networkAclsDefaultAction": {
+            "value": "Deny"
+        },
+        "networkAclsVirtualNetworkRules": {
+            "value": [
+                {
+                    "id": "/subscriptions/0719055a-0aee-4753-ac2b-39e8399704a6/resourceGroups/az305srkrgRG/providers/Microsoft.Network/virtualNetworks/az305srkVNET/subnets/az305srkSUBNET"
+                }
+            ]
+        },
+        "dnsEndpointType": {
+            "value": "Standard"
+        },
+        "keySource": {
+            "value": "Microsoft.Storage"
+        },
+        "encryptionEnabled": {
+            "value": true
+        },
+        "keyTypeForTableAndQueueEncryption": {
+            "value": "Account"
+        },
+        "infrastructureEncryptionEnabled": {
+            "value": false
+        },
+        "isContainerRestoreEnabled": {
+            "value": false
+        },
+        "isBlobSoftDeleteEnabled": {
+            "value": true
+        },
+        "blobSoftDeleteRetentionDays": {
+            "value": 7
+        },
+        "isContainerSoftDeleteEnabled": {
+            "value": true
+        },
+        "containerSoftDeleteRetentionDays": {
+            "value": 7
+        },
+        "changeFeed": {
+            "value": false
+        },
+        "isVersioningEnabled": {
+            "value": false
+        },
+        "isShareSoftDeleteEnabled": {
+            "value": true
+        },
+        "shareSoftDeleteRetentionDays": {
+            "value": 7
+        }
+    }
+}
